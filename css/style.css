@@ -1,0 +1,245 @@
+html{
+    background-image: url(../images/fondo.jpg);
+    background-repeat: inherit;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Mobile First*/
+/*Header*/
+div,nav,#navigation,article,footer,header,#greenbar,#btn_menu{
+    display:flex;
+}
+header{
+    justify-content: center;
+}
+nav{
+    flex-direction: column;
+}
+#greenbar{
+    background-color: rgb(3, 64, 75);
+    justify-content: space-between;
+    width: 100%;
+}
+#btn_menu{
+    width: 35%;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 64, 75);
+    border-right:solid black;
+}
+.navigation{
+    width:35%;
+    margin:0;
+    padding:0;
+    background-color: rgb(3, 64, 75);
+    display:none;
+    flex-direction: column;
+    
+}
+li.buttonsnav{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-self:  center;
+    border-top:solid black;
+    border-collapse: collapse;
+}
+
+.navigation.show{
+    display:flex;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(32, 185, 32);
+}
+#barcont{
+    align-items: center;
+    width:55%;
+    height: 100%;
+}
+#bar{
+    height: 42%;
+    width: 60%;
+    border:solid black;
+}
+#search{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height:40%;
+    color:rgb(32, 185, 32);
+    margin-left:3%;
+    margin-right:3%;
+    background-color:rgba(28, 119, 133, 0.89);
+    border:solid black;
+}
+#search:hover{
+    background-color: rgb(36, 218, 208);
+}
+/*Page*/
+article{
+    flex-direction: column;
+    align-items: center;
+
+}
+h1,h3{
+    color: rgb(121, 32, 121);
+}
+#darius:hover{
+    color: white;
+}
+.description{
+    text-align: center;
+    width: 80%;
+}
+#imgpage{
+    width: 300px;;
+    margin-top:1%;
+}
+
+table{
+    width: 40%;
+    align-self: flex-start;
+    margin-left:17%;
+}
+th{
+    text-align: left;
+}
+td.linktable{
+    font-family: cursive;
+}
+.linktable:hover{
+    background-color: rosybrown;
+}
+table,td,tr,th{
+    border: solid rgb(7, 4, 29);
+    background-color: rgb(73, 15, 32);
+    color:white;
+    border-collapse: collapse;
+}
+
+td.hard{
+    background-color: rgb(245, 52, 110);
+}
+
+#buttonbuy,#btn_quickchamp,#btn_delete,#btndeleteone,#btn_editar,#btn_filtrar_campeon,#btn_filtrar_tipo,
+#btn_filtrar_dificultad,#btn_filtrar_precio,#btn_restaurar,#btn_predet{
+    border:solid rgb(30, 87, 15);
+    background-color: rgb(57, 23, 100);
+    color: rgb(206, 112, 108);
+    font-family: cursive;
+    padding:0.5%;
+    text-align: center;
+}
+#buttonbuy:hover,#btn_delete:hover,#btn_quickchamp:hover,#btndeleteone:hover,#btn_editar:hover,
+#btn_filtrar_campeon:hover,#btn_filtrar_tipo:hover,#btn_filtrar_dificultad:hover,
+#btn_filtrar_precio:hover,#btn_restaurar:hover,#btn_predet:hover{
+    background-color:slateblue;
+}
+
+ul{
+    list-style: armenian;
+    color: slateblue;
+}
+#buttonform{
+    color: white;
+    border: solid rgb(39, 4, 122);
+    background-color: rgb(95, 3, 26);
+    width: 30%;
+    text-align: center;
+}
+#buttonform:hover{
+    background-color: rgb(27, 143, 137);
+}
+.hideform{
+    display: none;
+}
+
+#capcha{
+    border: solid rgb(25, 2, 78);
+    text-align: center;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.contfiltro{
+    flex-direction: column;
+    margin-top:0;
+}
+/*Footer*/
+footer{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 50%;
+    height: 20px;
+}
+
+
+
+/*Pc*/
+/*Header*/
+@media screen and (min-width: 660px){
+    #btn_menu{
+        display:none;
+    }
+    nav{
+        height: 100px;
+    }
+    nav #greenbar{ 
+        justify-content: center;
+    }
+    #barcont{
+        justify-content: center;
+    }
+    #bar{
+        width: 30%;
+    }
+    #search{
+        width: 8%;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        width: 40%;
+        margin-left:30%;
+        background-color: rgb(38, 57, 68);
+    }
+    li.buttonsnav,li.buttonsnav:hover{
+        width: 50%;
+        border:solid black;
+
+    }
+    li.buttonsnav:hover{
+        background-color: rgb(36, 218, 208);
+    }
+    /*Page*/
+    table{
+        margin-left:30%;
+    }
+    #imgpage{
+        width: 400px;
+    }
+    /*Footer*/
+    #buttonform{
+        width: 10%;
+    }
+
+}
+
+
+
+
+
+

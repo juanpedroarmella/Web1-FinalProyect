@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeones</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/shared.js"></script>
+    <script src="../js/barhtml.js"></script>
+    <script src="../js/jchamps.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <figure>
+            <img src="../images/logo.jpg" alt="Logo de League of Legends">
+        </figure>
+    </header>
+    <nav>
+        <div id="greenbar">
+            <a id="btn_menu">Menú</a>
+            <div id="barcont">
+                <input  id="bar" type="text" placeholder="Buscar campeones"><p id="search">Buscar</p> </p>
+            </div>
+        </div>
+        <ul class="navigation">
+            <li class="buttonsnav" ><a href="../index.html">Home</a></li>
+            <li class="buttonsnav"><a href="../html/champs.html">Campeones</a></li>
+        </ul> 
+    </nav>
+    <!--Page-->
+    <article>
+        <h1>Todos los campeones</h1>
+        <p id="statusvalid"></p>
+        <p id="btn_predet">Carga predeterminada</p>
+        <p id="btn_quickchamp">Generar 3 campeones</p>
+        <p id="btn_delete">Borrar tabla</p>
+        Fila a borrar:<input type="number" id="inputdelete"><p id="btndeleteone">Borrar fila</p>
+        <p class="edit">Fila a editar:</p>
+        <input type="number" id="input_edit">
+        Nombre: <input type="text" name="nombre" value="" id="name_edit"/>
+        Tipo: <input type="text" name="tipo" value="" id="type_edit"/>
+        Dificultad: <input type="text" name="dificultad" value="" id="difficulty_edit"/>
+        Precio: <input type="number" name="precio" value="" id="price_edit"/>
+        <p id="btn_editar">Editar</p>
+        <p>Filtrar por:</p>
+        <div class="contfiltro">
+            Campeon: <input type="text" id="input_filtrar_campeon"><p id="btn_filtrar_campeon">Filtrar</p>
+            Tipo: <input type="text" id="input_filtrar_tipo"><p id="btn_filtrar_tipo">Filtrar</p>
+            Dificultad: <input type="text" id="input_filtrar_dificultad"><p  id="btn_filtrar_dificultad">Filtrar</p>
+            Precio: <input type="number" id="input_filtrar_precio"><p id="btn_filtrar_precio">Filtrar</p>
+            <p id="btn_restaurar">Restaurar</p>
+        </div>   
+        <table>
+            <thead>
+                <tr>
+                    <th>Campeon</th>
+                    <th>Tipo</th>
+                    <th>Dificultad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="bodytable">
+            </tbody>
+        </table>
+    </article>
+    <article>
+        <p id="buttonform">Crear tu campeon</p>
+        <form class="hideform" action="">
+
+            <p>Nombre: <input type="text" name="nombre" value="" id="name"/></p>
+            <p>Tipo: <input type="text" name="tipo" value="" id="type"/></p>
+            <p>Dificultad: <input type="text" name="dificultad" value="" id="difficulty"/></p>
+            <p>Precio: <input type="number" name="precio" value="" id="price"/></p>
+
+            <p id="capcha"></p>
+            <p>Capcha:<input id="inputcapcha" placeholder="Respetar minusculas" type="text"></p>
+            <p id="isvalid"></p>
+            <p><input  id="send" type="button" value="Enviar Solicitud"/></p>
+
+        </form>
+    </article>
+    <!--Footer-->
+    <footer>
+        <p>Desarrollado por Juan Pedro Armella y Santiago Gonzalez</p>
+        <p>2020 Copyright</p>
+    <footer>
+
+</body>
+</html>
